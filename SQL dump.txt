@@ -1,0 +1,16 @@
+INSERT INTO PARENT_TASK (Parent_Task) VALUES('Parent Task 2');
+INSERT INTO PARENT_TASK (Parent_Task) VALUES('Parent Task 1');
+
+INSERT INTO TASK (Task,Start_Date,End_Date,Priority,Parent,Status,User) VALUES('Task 1','2019-11-10','2019-11-19',25,'Parent Task 1',1,'Arvind');
+INSERT INTO TASK (Task,Start_Date,End_Date,Priority,Parent,Status,User) VALUES('Task 2','2019-11-11','2019-11-21',20,'Parent Task 1',1,'Joji');
+INSERT INTO TASK (Task,Start_Date,End_Date,Priority,Parent,Status,User) VALUES('Task 3','2019-11-12','2019-11-25',20,'Parent Task 2',1,'Krishna');
+INSERT INTO TASK (Task,Start_Date,End_Date,Priority,Parent,Status,User) VALUES('Task 4','2019-11-19','2019-11-22',20,'Parent Task 2',0,'Arvind');
+INSERT INTO TASK (Task,Start_Date,End_Date,Priority,Parent,Status,User) VALUES('Task 5','2019-11-20','2019-11-23',20,'Parent Task 1',0,'Joji');
+
+INSERT INTO USERS VALUES (1,'Krishna','Kumar',113070,1,10);
+INSERT INTO USERS VALUES (2,'Joji','John',513475,1,10);
+INSERT INTO USERS VALUES (3,'Arvind','Potnuru',33070,1,10);
+
+INSERT INTO PROJECT VALUES(2,'AMS Support','12-11-2010','25-11-2015','1',0,'Prasanna');
+INSERT INTO PROJECT VALUES(3,'AFEWS','12-11-2015','25-11-2016','5',0,'Ananth');
+INSERT INTO PROJECT VALUES(2,'Gradebook','12-11-2016','25-11-2019','10',1,'Santhosh');
